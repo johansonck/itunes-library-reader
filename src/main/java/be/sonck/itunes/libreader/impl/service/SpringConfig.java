@@ -1,5 +1,7 @@
 package be.sonck.itunes.libreader.impl.service;
 
+import be.sonck.itunes.api.service.ITunesBridge;
+import be.sonck.itunes.api.service.ITunesBridgeFactory;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -30,5 +32,10 @@ public class SpringConfig {
         } catch (SAXException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Bean
+    public ITunesBridge iTunesBridge() {
+        return ITunesBridgeFactory.create();
     }
 }

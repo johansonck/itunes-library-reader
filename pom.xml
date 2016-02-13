@@ -35,14 +35,19 @@
             <version>${spring.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-oxm</artifactId>
-            <version>${spring.version}</version>
+            <groupId>be.sonck.itunes</groupId>
+            <artifactId>itunes-bridge</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
-            <groupId>org.codehaus.castor</groupId>
-            <artifactId>castor-xml</artifactId>
-            <version>1.3.3</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j13</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.13</version>
         </dependency>
 
         <!--test dependencies-->
@@ -65,20 +70,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.unitils</groupId>
-            <artifactId>unitils-core</artifactId>
-            <version>3.4.2</version>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>be.sonck.itunes</groupId>
-            <artifactId>itunes-bridge</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>be.sonck.itunes</groupId>
-            <artifactId>itunes-bridge</artifactId>
-            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
